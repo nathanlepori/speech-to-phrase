@@ -315,10 +315,10 @@ lists:
         out: "closed"
   # shopping_list_item:
   #   wildcard: true
-  todo_list_item:
-    wildcard: true
-  zone:
-    wildcard: true
+  # todo_list_item:
+  #   wildcard: true
+  # zone:
+  #   wildcard: true
   position:
     range:
       type: "percentage"
@@ -364,12 +364,12 @@ lists:
     values:
       - in: "un|una|un'"
         out: "1"
-  timer_name:
-    wildcard: true
-  timer_command:
-    wildcard: true
-  message:
-    wildcard: true
+  # timer_name:
+  #   wildcard: true
+  # timer_command:
+  #   wildcard: true
+  # message:
+  #   wildcard: true
 expansion_rules:
   the: "(l(o |a |e )|i[l] |gli |l'[ ])"
   at: "(a[l |lla])"
