@@ -313,8 +313,8 @@ lists:
         out: "on"
       - in: "<closed>"
         out: "closed"
-  shopping_list_item:
-    wildcard: true
+  # shopping_list_item:
+  #   wildcard: true
   todo_list_item:
     wildcard: true
   zone:
