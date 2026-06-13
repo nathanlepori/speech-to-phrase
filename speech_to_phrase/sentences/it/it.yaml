@@ -1,0 +1,20 @@
+---
+language: "it"
+
+data:
+  # timers
+  - "imposta [un] timer [di] {seconds} secondi"
+  - "imposta [un] timer [di] 1 minuto"
+  - "imposta [un] timer [di] {minutes} minuti"
+  - "imposta [un] timer [di] 1 ora"
+  - "imposta [un] timer [di] {hours} ore"
+  - "imposta [un] timer [di] 1 ora [e] 1 minuto"
+  - "imposta [un] timer [di] 1 ora [e] {minutes} minuti"
+  - "imposta [un] timer [di] {hours} ore [e] {minutes} minuti"
+
+  - "(annulla|cancella) [il|il mio] timer"
+  - "(annulla|cancella) tutti [i|i miei] timer"
+  - "(metti in pausa|riprendi|continua)[ il| il mio] timer"
+  - "stato timer"
+  - "stato (di|del[ mio]|dei[ miei]) timer"
+  - "[quanto ]tempo (manca|resta|rimane|rimanente) (a|su)(l[ mio]|i[ miei]) timer"
