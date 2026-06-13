@@ -1,0 +1,32 @@
+---
+language: "it"
+data:
+  - sentences:
+      - "<turn_off> [<all>] [<the>] <light> [(<of>|<in>)]<area>"
+      - "<turn_off> <area>"
+      - "<turn_off> [<in>]<area> [<all>] [<the>] <light>"
+      - "[<in>]<area> [<all>] [<the>] <light> <turn_off>"
+      - "[<in>]<area> <turn_off> [<all>] [<the>] <light>"
+    slots:
+      domain: "light"
+    response: "lights_area"
+  - sentences:
+      - "<turn_off> [<all>] [<in>|<the>]{floor}"
+    response: "lights_floor"
+    slots:
+      domain: "light"
+  - sentences:
+      - "<turn_off> [<the>] <light> [<in_here>]"
+    slots:
+      domain: "light"
+    requires_context:
+      area:
+        slot: true
+    response: "lights_area"
+  - sentences:
+      - "<turn_off> <all> [<the>] <light> [<everywhere>]"
+      - "<turn_off> [<the>] <light> <everywhere>"
+      - "fa[i|re] buio <everywhere>"
+    response: "lights_all"
+    slots:
+      domain: "light"

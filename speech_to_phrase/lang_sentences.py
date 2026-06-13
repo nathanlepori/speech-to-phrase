@@ -27,7 +27,7 @@ class SentenceBlock:
     @staticmethod
     def from_dict(block_dict: dict[str, Any]) -> "SentenceBlock":
         block = SentenceBlock(
-            sentences=block_dict["sentences"], domains=set(block_dict["domains"])
+            sentences=block_dict["sentences"], domains=set(block_dict["domains"]) if "domains" in block_dict else None
         )
 
         for supports_field in fields(block):

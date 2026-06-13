@@ -1,0 +1,17 @@
+---
+language: "it"
+data:
+  - sentences:
+      - "<numeric_value_set> [<the>] <temp> <to> <temperature>"
+  - sentences:
+      - "<numeric_value_set> [<the>] <temp> <in> <area> <to> <temperature>"
+      - "<numeric_value_set> [<the>|<some>] <temp> <of> <temperature> <in> <area>"
+      - "<numeric_value_set> [<in>] <area> [<the>|<some>] <temp> (<to>|<of>) <temperature>"
+  - sentences:
+      - "<numeric_value_set> [<the>] <temp> (<of>|<on>) <floor> <to> <temperature>"
+      - "<numeric_value_set> <floor> <temp> <to> <temperature>"
+  - sentences:
+      - "<numeric_value_set> [<the>] <temp> [<of>|<in>] <name> <to> <temperature>"
+      - "<numeric_value_set> <name> [<temp>] <to> <temperature>"
+    requires_context:
+      domain: "climate"

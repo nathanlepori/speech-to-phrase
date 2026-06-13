@@ -1,0 +1,7 @@
+---
+language: "it"
+data:
+  - sentences:
+      - "Che (ore sono | (ora | orario) è) [adesso]"
+      - "(Dimmi | Dammi) l'ora [attuale | esatta]"
+      - "(Dimmi | Dammi) l'orario [attuale | esatto]"

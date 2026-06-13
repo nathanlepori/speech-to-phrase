@@ -1,0 +1,7 @@
+---
+language: "it"
+data:
+  - sentences:
+      - "<start> {name}"
+    requires_context:
+      domain: "vacuum"

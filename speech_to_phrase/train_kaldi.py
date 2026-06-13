@@ -398,10 +398,18 @@ def _get_sentences_hash(
     hasher = hashlib.sha256()
 
     # Builtin sentences
+    sentences_dir = settings.sentences / model.sentences_language
     sentences_path = settings.sentences / f"{model.sentences_language}.yaml"
-    with open(sentences_path, "rb") as sentences_file:
-        chunk = sentences_file.read(chunk_size)
-        hasher.update(chunk)
+
+    if sentences_dir.is_dir():
+        for builtin_sentences_path in sorted(sentences_dir.glob("*.yaml")):
+            with open(builtin_sentences_path, "rb") as sentences_file:
+                chunk = sentences_file.read(chunk_size)
+                hasher.update(chunk)
+    else:
+        with open(sentences_path, "rb") as sentences_file:
+            chunk = sentences_file.read(chunk_size)
+            hasher.update(chunk)
 
     # Custom sentences
     for custom_sentences_dir in settings.custom_sentences_dirs:
